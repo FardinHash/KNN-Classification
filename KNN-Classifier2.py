@@ -23,4 +23,17 @@ X_train, X_test, y_train, y_test= train_test_split(X, y, test_size= 0.2, random_
 
 #model create
 
-model= KNeighborsClassifier(n_neighbors=3)
+model= KNeighborsClassifier(n_neighbors=7)
+
+#fit the model with train test
+
+model.fit(X_train, y_train)
+
+#prediction
+pred= model.predict(X_test)
+
+#confusion matrix and accuracy
+conf_mat= confusion_matrix(y_test, pred)
+acc_score= accuracy_score(y_test, pred)
+
+print(acc_score)
