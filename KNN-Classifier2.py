@@ -1,3 +1,8 @@
+#This is same as first one, but the difference is previous accuracy was 96%. And this time accuracy is 100%! 
+#100% accuracy got just because of changing the value of K in the model create phase. Previously it was 3, and after increase the value (7) got the highest accuracy. 
+
+
+
 #libraries
 
 import os
